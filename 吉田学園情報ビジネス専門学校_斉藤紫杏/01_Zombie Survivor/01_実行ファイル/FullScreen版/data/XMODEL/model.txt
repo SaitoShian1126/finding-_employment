@@ -1,0 +1,515 @@
+#==============================================================================
+#
+# 『model』スクリプトファイル [model.txt]
+# Author : SHIAN SAITO
+#
+#==============================================================================
+SCRIPT			# この行は絶対消さないこと！
+
+#------------------------------------------------------------------------------
+# モデルファイル名
+#------------------------------------------------------------------------------
+MODEL_FILENAME = data/XMODEL/helicopter.x			# [0]ヘリコプター
+MODEL_FILENAME = data/XMODEL/helicopter.x			# [1]ヘリコプター
+MODEL_FILENAME = data/XMODEL/apartment_01.x			# [2]アパート_01
+MODEL_FILENAME = data/XMODEL/apartment_02.x			# [3]アパート_02
+MODEL_FILENAME = data/XMODEL/apartment_01.x			# [4]アパート_01
+MODEL_FILENAME = data/XMODEL/apartment_02.x			# [5]アパート_02
+MODEL_FILENAME = data/XMODEL/tank.x					# [6]戦車
+MODEL_FILENAME = data/XMODEL/house_01.x				# [7]家
+MODEL_FILENAME = data/XMODEL/house_01.x				# [8]家
+MODEL_FILENAME = data/XMODEL/house_02.x				# [9]家
+MODEL_FILENAME = data/XMODEL/house_02.x				# [10]家
+MODEL_FILENAME = data/XMODEL/house_01.x				# [11]家
+MODEL_FILENAME = data/XMODEL/house_Parts.x			# [12]玄関
+MODEL_FILENAME = data/XMODEL/house_Parts.x			# [13]玄関
+MODEL_FILENAME = data/XMODEL/car.x					# [14]車
+MODEL_FILENAME = data/XMODEL/car.x					# [15]車
+MODEL_FILENAME = data/XMODEL/car.x					# [16]車
+MODEL_FILENAME = data/XMODEL/car.x					# [17]車
+MODEL_FILENAME = data/XMODEL/car.x					# [18]車
+MODEL_FILENAME = data/XMODEL/car.x					# [19]車
+MODEL_FILENAME = data/XMODEL/car.x					# [20]車
+MODEL_FILENAME = data/XMODEL/gasstations_01.x		# [21]ガソリンスタンド(建物)
+MODEL_FILENAME = data/XMODEL/gasstations_02.x		# [22]ガソリンスタンド(屋根)
+MODEL_FILENAME = data/XMODEL/gasstations_03.x		# [23]ガソリンスタンド(柱)
+MODEL_FILENAME = data/XMODEL/gasstations_03.x		# [24]ガソリンスタンド(柱)
+MODEL_FILENAME = data/XMODEL/gasstations_03.x		# [25]ガソリンスタンド(柱)
+MODEL_FILENAME = data/XMODEL/gasstations_03.x		# [26]ガソリンスタンド(柱)
+MODEL_FILENAME = data/XMODEL/gasstations_04.x		# [27]ガソリンスタンド(給油所)
+MODEL_FILENAME = data/XMODEL/hospital.x				# [28]病院
+MODEL_FILENAME = data/XMODEL/military_bases.x		# [29]軍拠点
+MODEL_FILENAME = data/XMODEL/drum.x					# [30]ドラム缶
+MODEL_FILENAME = data/XMODEL/weaponbox.x			# [31]武器箱
+MODEL_FILENAME = data/XMODEL/fence_01.x				# [32]柵
+MODEL_FILENAME = data/XMODEL/fence_01.x				# [33]柵
+MODEL_FILENAME = data/XMODEL/fence_01.x				# [34]柵
+MODEL_FILENAME = data/XMODEL/fence.x				# [35]柵
+MODEL_FILENAME = data/XMODEL/fence.x				# [36]柵
+MODEL_FILENAME = data/XMODEL/fence.x				# [37]柵
+MODEL_FILENAME = data/XMODEL/fence.x				# [38]柵
+MODEL_FILENAME = data/XMODEL/fence.x				# [39]柵
+MODEL_FILENAME = data/XMODEL/fence.x				# [40]柵
+MODEL_FILENAME = data/XMODEL/fence_01.x				# [41]柵
+MODEL_FILENAME = data/XMODEL/fence_01.x				# [42]柵
+MODEL_FILENAME = data/XMODEL/fence_01.x				# [43]柵
+MODEL_FILENAME = data/XMODEL/flowerbed.x			# [44]花壇
+MODEL_FILENAME = data/XMODEL/flowerbed.x			# [45]花壇
+MODEL_FILENAME = data/XMODEL/fountain.x				# [46]噴水
+MODEL_FILENAME = data/XMODEL/guard.x				# [47]ガード
+MODEL_FILENAME = data/XMODEL/guard_01.x				# [48]ガード
+MODEL_FILENAME = data/XMODEL/guard_02.x				# [49]ガード
+MODEL_FILENAME = data/XMODEL/guard.x				# [50]ガード
+MODEL_FILENAME = data/XMODEL/guard_01.x				# [51]ガード
+MODEL_FILENAME = data/XMODEL/guard_02.x				# [52]ガード
+MODEL_FILENAME = data/XMODEL/machinegun.x			# [53]機関銃
+MODEL_FILENAME = data/XMODEL/corpse.x				# [54]死体
+MODEL_FILENAME = data/XMODEL/corpse.x				# [55]死体
+MODEL_FILENAME = data/XMODEL/corpse.x				# [56]死体
+MODEL_FILENAME = data/XMODEL/corpse.x				# [57]死体
+MODEL_FILENAME = data/XMODEL/corpse.x				# [58]死体
+MODEL_FILENAME = data/XMODEL/corpse.x				# [59]死体
+MODEL_FILENAME = data/XMODEL/corpse.x				# [60]死体
+MODEL_FILENAME = data/XMODEL/corpse.x				# [61]死体
+MODEL_FILENAME = data/XMODEL/corpse.x				# [62]死体
+MODEL_FILENAME = data/XMODEL/corpse.x				# [63]死体
+
+
+#------------------------------------------------------------------------------
+# モデル配置情報
+#------------------------------------------------------------------------------
+#----------------------------
+# ヘリコプター
+#----------------------------
+	MODELSET
+		TYPE = 0
+		POS = 420 0 -100
+		ROT = 0 0 45
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 1
+		POS = 180 0 -1000
+		ROT = 0 1.57 0
+	END_MODELSET
+	
+#----------------------------
+# アパート
+#----------------------------
+	MODELSET
+		TYPE = 2
+		POS = -80 0 -180
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 3
+		POS = -80 0 -290
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 4
+		POS = 968 0 -10
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 5
+		POS = 968 0 90
+		ROT = 0 0 0
+	END_MODELSET
+	
+#----------------------------
+# 戦車
+#----------------------------
+	MODELSET
+		TYPE = 6
+		POS = 90 0 -1000
+		ROT = 0 3.14 0
+	END_MODELSET
+	
+#----------------------------
+# 家
+#----------------------------
+	MODELSET
+		TYPE = 7
+		POS = 171 0 -171
+		ROT = 0 0 0
+	END_MODELSET
+	
+	
+	MODELSET
+		TYPE = 8
+		POS = 400 0 50
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 9
+		POS = 477 0 -450
+		ROT = 0 0 0
+	END_MODELSET
+	
+		MODELSET
+		TYPE = 10
+		POS = 677 0 -450
+		ROT = 0 0 0
+	END_MODELSET
+	
+		MODELSET
+		TYPE = 11
+		POS = 930 0 -230
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 12
+		POS = 115 0 -230
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 13
+		POS = 345 0 -15
+		ROT = 0 0 0
+	END_MODELSET
+	
+#----------------------------
+# 車
+#----------------------------
+	MODELSET
+		TYPE = 14
+		POS = 300 0 -970
+		ROT = 0 3.14 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 15
+		POS = 155 0 -586
+		ROT = 0 3.14 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 16
+		POS = 150 0 -450
+		ROT = 0 -45 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 17
+		POS = 250 0 -970
+		ROT = 0 3.14 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 18
+		POS = 540 0 -590
+		ROT = 0 -1.57 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 19
+		POS = 960 0 -370
+		ROT = 0 1.57 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 20
+		POS = 830 0 -20
+		ROT = 0 0 0
+	END_MODELSET
+
+#----------------------------
+# ガソリンスタンド
+#----------------------------
+	MODELSET
+		TYPE = 21
+		POS = 200 0 -530
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 22
+		POS = 170 100 -530
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 23
+		POS = 200 0 -480
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 24
+		POS = 200 0 -580
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 25
+		POS = 100 0 -480
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 26
+		POS = 100 0 -580
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 27
+		POS = 100 0 -530
+		ROT = 0 0 0
+	END_MODELSET
+	
+#----------------------------
+# 病院
+#----------------------------
+	MODELSET
+		TYPE = 28
+		POS = 850 0 -980
+		ROT = 0 0 0
+	END_MODELSET
+	
+#----------------------------
+# 軍拠点
+#----------------------------
+	MODELSET
+		TYPE = 29
+		POS = 410 0 -960
+		ROT = 0 0 0
+	END_MODELSET
+
+#----------------------------
+# ドラム缶
+#----------------------------
+	MODELSET
+		TYPE = 30
+		POS = 480 0 -950
+		ROT = 0 0 0
+	END_MODELSET
+	
+#----------------------------
+# 武器箱
+#----------------------------
+	MODELSET
+		TYPE = 31
+		POS = 480 0 -980
+		ROT = 0 0 0
+	END_MODELSET
+	
+#----------------------------
+# 柵
+#----------------------------
+	MODELSET
+		TYPE = 32
+		POS = 530 0 -1000
+		ROT = 0 0 0
+	END_MODELSET
+
+	MODELSET
+		TYPE = 33
+		POS = 530 0 -920
+		ROT = 0 0 0
+	END_MODELSET
+
+	MODELSET
+		TYPE = 34
+		POS = 530 0 -860
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 35
+		POS = 482 0 -812
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 36
+		POS = 322 0 -812
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 37
+		POS = 262 0 -812
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 38
+		POS = 182 0 -812
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 39
+		POS = 102 0 -812
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 40
+		POS = 22 0 -812
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 41
+		POS = -26 0 -860
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 42
+		POS = -26 0 -940
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 43
+		POS = -26 0 -1000
+		ROT = 0 0 0
+	END_MODELSET
+	
+#----------------------------
+# 花壇
+#----------------------------
+	MODELSET
+		TYPE = 44
+		POS = 590 0 120
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 45
+		POS = 640 0 120
+		ROT = 0 0 0
+	END_MODELSET
+	
+#----------------------------
+# 噴水
+#----------------------------
+	MODELSET
+		TYPE = 46
+		POS = 615 0 20
+		ROT = 0 0 0
+	END_MODELSET	
+
+#----------------------------
+# ガード
+#----------------------------
+	MODELSET
+		TYPE = 47
+		POS = 1000 0 -520
+		ROT = 0 0 0
+	END_MODELSET	
+	
+	MODELSET
+		TYPE = 48
+		POS = 990 0 -550
+		ROT = 0 0 0
+	END_MODELSET	
+	
+	MODELSET
+		TYPE = 49
+		POS = 990 0 -490
+		ROT = 0 0 0
+	END_MODELSET	
+	
+		MODELSET
+		TYPE = 50
+		POS = 767 0 -732
+		ROT = 0 0 0
+	END_MODELSET
+	
+		MODELSET
+		TYPE = 51
+		POS = 770 0 -700
+		ROT = 0 0 0
+	END_MODELSET	
+	
+	MODELSET
+		TYPE = 52
+		POS = 770 0 -764
+		ROT = 0 0 0
+	END_MODELSET
+	
+#----------------------------
+# 機関銃
+#----------------------------
+	MODELSET
+		TYPE = 53
+		POS = 790 0 -730
+		ROT = 0 0 0
+	END_MODELSET	
+	
+#----------------------------
+# 死体
+#----------------------------
+	MODELSET
+		TYPE = 54
+		POS = 443 0 -688
+		ROT = 0 -0.785 0
+	END_MODELSET	
+	
+	MODELSET
+		TYPE = 55
+		POS = 790 0 -730
+		ROT = 0 0 0
+	END_MODELSET	
+	
+	MODELSET
+		TYPE = 56
+		POS = 7 0 -667
+		ROT = 0 0 0
+	END_MODELSET
+	
+	MODELSET
+		TYPE = 57
+		POS = -58 0 -519
+		ROT = 0 0.785 0
+	END_MODELSET	
+	
+	MODELSET
+		TYPE = 58
+		POS = 235 0 -274
+		ROT = 0 1.57 0
+	END_MODELSET	
+	
+	MODELSET
+		TYPE = 59
+		POS = 825 0 -144
+		ROT = 0 0 0
+	END_MODELSET	
+	
+	MODELSET
+		TYPE = 60
+		POS = 559 0 40
+		ROT = 0 0.785 0
+	END_MODELSET	
+	
+	MODELSET
+		TYPE = 61
+		POS = 450 0 -130
+		ROT = 0 0 0
+	END_MODELSET	
+	
+	MODELSET
+		TYPE = 62
+		POS = 233 0 90
+		ROT = 0 0 0
+	END_MODELSET	
+	
+	MODELSET
+		TYPE = 63
+		POS = -70 0 -24
+		ROT = 0 0 0
+	END_MODELSET	
+
+
+END_SCRIPT

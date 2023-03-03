@@ -1,0 +1,422 @@
+#==============================================================================
+#
+# 『モーションビューワ』スクリプトファイル [motion.txt]
+# Author : SHIAN SAITO
+#
+#==============================================================================
+SCRIPT			# この行は絶対消さないこと！
+
+#------------------------------------------------------------------------------
+# モデル数
+#------------------------------------------------------------------------------
+NUM_MODEL = 21
+
+#------------------------------------------------------------------------------
+# モデルファイル名
+#------------------------------------------------------------------------------
+MODEL_FILENAME = data/XMODEL/boss_body.x			# [0]体
+MODEL_FILENAME = data/XMODEL/boss_head.x			# [1]敵の頭
+MODEL_FILENAME = data/XMODEL/boss_upperarm_01.x		# [2]左の二の腕
+MODEL_FILENAME = data/XMODEL/boss_upperarm.x		# [3]右の二の腕
+MODEL_FILENAME = data/XMODEL/boss_elbow.x			# [4]肘
+MODEL_FILENAME = data/XMODEL/boss_elbow.x			# [5]肘
+MODEL_FILENAME = data/XMODEL/boss_arm.x				# [6]腕
+MODEL_FILENAME = data/XMODEL/boss_arm.x				# [7]腕
+MODEL_FILENAME = data/XMODEL/boss_hand.x			# [8]手
+MODEL_FILENAME = data/XMODEL/boss_hand.x			# [9]手
+MODEL_FILENAME = data/XMODEL/boss_waist.x			# [10]腰
+MODEL_FILENAME = data/XMODEL/boss_thighs.x			# [11]太もも
+MODEL_FILENAME = data/XMODEL/boss_thighs.x			# [12]太もも
+MODEL_FILENAME = data/XMODEL/boss_knee.x			# [13]膝
+MODEL_FILENAME = data/XMODEL/boss_knee.x			# [14]膝
+MODEL_FILENAME = data/XMODEL/boss_neck.x			# [15]脛
+MODEL_FILENAME = data/XMODEL/boss_neck.x			# [16]脛
+MODEL_FILENAME = data/XMODEL/boss_foot.x			# [17]足
+MODEL_FILENAME = data/XMODEL/boss_foot.x			# [18]足
+MODEL_FILENAME = data/XMODEL/boss_cane.x			# [19]杖
+MODEL_FILENAME = data/XMODEL/boss_chair.x			# [20]椅子
+
+#------------------------------------------------------------------------------
+# キャラクター情報
+#------------------------------------------------------------------------------
+CHARACTERSET
+	NUM_PARTS = 21					# パーツ数
+
+	PARTSSET						# [0]体
+		INDEX = 0
+		PARENT = -1					# (親)NULL
+		POS = 0.0 90.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [1]敵の頭
+		INDEX = 1
+		PARENT = 0					# (親)体
+		POS = 0.0 -9.0 -7.5
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [2]左の二の腕
+		INDEX = 2
+		PARENT = 0					# (親)体
+		POS = 15.0 -6.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [3]右の二の腕
+		INDEX = 3
+		PARENT = 0					# (親)体
+		POS = -15.0 -6.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [4]左の肘
+		INDEX = 4
+		PARENT = 2					# (親)左の二の腕
+		POS = 11.0 -30.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [5]右の肘
+		INDEX = 5
+		PARENT = 3					# (親)右の二の腕
+		POS = -11.0 -30.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [6]左の腕
+		INDEX = 6
+		PARENT = 4					# (親)左の肘
+		POS = 0.0 -3.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [7]右の腕
+		INDEX = 7
+		PARENT = 5					# (親)右の肘
+		POS = 0.0 -3.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [8]左の手
+		INDEX = 8
+		PARENT = 6					# (親)左の腕
+		POS = 0.0 0.0 -30.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [9]右の手
+		INDEX = 9
+		PARENT = 7					# (親)右の腕
+		POS = 0.0 0.0 -30.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [10]腰
+		INDEX = 10
+		PARENT = 0					# (親)体
+		POS = 0.0 -54.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [11]左の太もも
+		INDEX = 11
+		PARENT = 10					# (親)腰
+		POS = -15.0 -5.0 -7.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [12]右の太もも
+		INDEX = 12
+		PARENT = 10					# (親)腰
+		POS = 15.0 -5.0 -7.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [13]左の膝
+		INDEX = 13
+		PARENT = 11					# (親)左の太もも
+		POS = 1.5 0.0 -36.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [14]右の膝
+		INDEX = 14
+		PARENT = 12					# (親)右の太もも
+		POS = 1.5 0.0 -36.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [15]左の脛
+		INDEX = 15
+		PARENT = 13					# (親)左の膝
+		POS = 0.0 0.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [16]右の脛
+		INDEX = 16
+		PARENT = 14					# (親)右の膝
+		POS = 0.0 0.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [17]左の足
+		INDEX = 17
+		PARENT = 15					# (親)左の脛
+		POS = 0.0 -20.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [18]右の足
+		INDEX = 18
+		PARENT = 16					# (親)右の脛
+		POS = 0.0 -20.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [19]杖
+		INDEX = 19
+		PARENT = 9					# (親)右の手
+		POS = 0.0 0.0 0.0
+		ROT = -1.57 0.0 0.0
+	END_PARTSSET
+	
+	PARTSSET						# [20]椅子
+		INDEX = 20
+		PARENT = -1					# (親)NULL
+		POS = -6.0 0.0 0.0
+		ROT = 0.0 0.0 0.0
+	END_PARTSSET
+	
+END_CHARACTERSET
+
+#------------------------------------------------------------------------------
+# モーション情報
+#------------------------------------------------------------------------------
+#---------------------------------------
+# ニュートラルモーション
+#---------------------------------------
+MOTIONSET
+	LOOP = 0						# ループするかどうか[0:ループしない / 1:ループする]
+	NUM_KEY = 2						# キー数
+
+	KEYSET
+		FRAME = 50					# キー再生フレーム数
+		KEY							# [0]体
+			POS = 0.0 90.0 0.0
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY							# [1]頭
+			POS = 0.0 -9.0 -7.5
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY							# [2]左の二の腕
+			POS = 15.0 -6.0 0.0
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY							# [3]右の二の腕
+			POS = -15.0 -6.0 0.0
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY							# [4]左の肘
+			POS = 11.0 -30.0 0.0
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY							# [5]右の肘
+			POS = -11.0 -30.0 0.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+
+		KEY							# [6]左の腕
+			POS = 0.0 -3.0 0.0
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY							# [7]右の腕
+			POS = 0.0 -3.0 0.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+		
+		KEY							# [8]左の手
+			POS = 0.0 0.0 -30.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+		
+		KEY							# [9]右の手
+			POS = 0.00 0.0 -30.0
+			ROT = 0.00 0.00 0.00
+		END_KEY
+		
+		KEY							# [10]腰
+			POS = 0.00 -54.0 0.0
+			ROT = 0.00 0.00 0.00
+		END_KEY
+		
+		KEY							# [11]左の太もも
+			POS = -15.0 -5.0 -7.0
+			ROT = 0.00 0.22 0.00
+		END_KEY
+		
+		KEY							# [12]右の太もも
+			POS = 15.0 -5.0 -7.0
+			ROT = 0.00 -0.19 0.00
+		END_KEY
+		
+		KEY							# [13]左の膝
+			POS = 1.5 0.0 -36.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+		
+		KEY							# [14]右の膝
+			POS = 1.5 0.0 -36.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+	
+		KEY							# [15]左の脛
+			POS = 0.0 0.0 0.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+			
+		KEY							# [16]右の脛
+			POS = 0.0 0.0 0.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+	
+		KEY							# [17]左の足
+			POS = 0.0 -20.0 0.0
+			ROT = 0.00 0.19 0.00
+		END_KEY
+	
+		KEY							# [18]右の足
+			POS = 0.0 -20.0 0.0
+			ROT = 0.00 -0.31 0.00
+		END_KEY
+	
+		KEY							# [19]杖
+			POS = 0.0 0.0 0.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+	
+		KEY							# [20]椅子
+			POS = -6.0 0.0 0.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+	END_KEYSET
+
+	KEYSET
+		KEYSET
+		FRAME = 50					# キー再生フレーム数
+		KEY							# [0]体
+			POS = 0.0 90.0 0.0
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY							# [1]頭
+			POS = 0.0 -9.0 -7.5
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY							# [2]左の二の腕
+			POS = 15.00 -6.0 0.0
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY							# [3]右の二の腕
+			POS = -15.0 -6.0 0.0
+			ROT = 1.53 0.00 0.00
+		END_KEY
+
+		KEY							# [4]左の肘
+			POS = 11.0 -30.0 0.0
+			ROT = 0.00 0.00 0.00
+		END_KEY
+
+		KEY							# [5]右の肘
+			POS = -11.0 -30.0 0.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+
+		KEY							# [6]左の腕
+			POS = 0.0 -3.0 0.0
+			ROT = 0.00 0.00 0.13
+		END_KEY
+
+		KEY							# [7]右の腕
+			POS = 0.0 -3.0 0.0
+			ROT = -1.41 0.00 0.00
+		END_KEY
+		
+		KEY							# [8]左の手
+			POS = 0.0 0.0 -30.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+		
+		KEY							# [9]右の手
+			POS = 0.00 0.0 -30.0
+			ROT = 0.00 0.00 0.00
+		END_KEY
+		
+		KEY							# [10]腰
+			POS = 0.00 -54.0 0.0
+			ROT = 0.00 0.00 0.00
+		END_KEY
+		
+		KEY							# [11]左の太もも
+			POS = -15.0 -5.0 -7.0
+			ROT = 0.00 0.22 0.00
+		END_KEY
+		
+		KEY							# [12]右の太もも
+			POS = 15.0 -5.0 -7.0
+			ROT = 0.00 -0.19 0.00
+		END_KEY
+		
+		KEY							# [13]左の膝
+			POS = 1.5 0.0 -36.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+		
+		KEY							# [14]右の膝
+			POS = 1.5 0.0 -36.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+	
+		KEY							# [15]左の脛
+			POS = 0.0 0.0 0.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+			
+		KEY							# [16]右の脛
+			POS = 0.0 0.0 0.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+	
+		KEY							# [17]左の足
+			POS = 0.0 -20.0 0.0
+			ROT = 0.00 0.19 0.00
+		END_KEY
+	
+		KEY							# [18]右の足
+			POS = 0.0 -20.0 0.0
+			ROT = 0.00 -0.31 0.00
+		END_KEY
+	
+		KEY							# [19]杖
+			POS = 0.0 0.0 0.0
+			ROT = -1.38 0.00 0.00
+		END_KEY
+	
+		KEY							# [20]椅子
+			POS = -6.0 0.0 0.0
+			ROT = 0.0 0.0 0.0
+		END_KEY
+	END_KEYSET
+END_MOTIONSET
+
+END_SCRIPT		# この行は絶対消さないこと！
